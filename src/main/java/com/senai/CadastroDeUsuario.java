@@ -59,7 +59,7 @@ public class CadastroDeUsuario {
         StringBuilder tabela = new StringBuilder();
         for (String[] linha : matrizCadastro) {
             for (int coluna = 0; coluna < linha.length; coluna++) {
-                int tamanhoColuna = coluna == 0 ? 5 : (coluna == 2 ? 10 : 25);
+                int tamanhoColuna = coluna == 0 ? 5 : (coluna == 2 ? 12 : 25);
                 tabela.append(String.format("%-" + tamanhoColuna + "s |", linha[coluna]));
             }
             tabela.append("\n");
